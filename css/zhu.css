@@ -1,0 +1,161 @@
+body{
+    background-color: black;
+}
+
+.ding{
+    margin-top: 20px;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    justify-content:start;
+
+}
+
+.ding div{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+.atow:active{
+    animation-name: tiao;
+    animation-duration: 0.25s;
+}
+
+
+.asan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes tiao{
+    from{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(0px,-10px);
+    }
+    to{
+        transform: translate(0px,0px);
+    }    
+}
+
+.aone:hover{
+    animation:zhuan;
+    animation-duration: 1s;
+    
+}
+
+@keyframes zhuan{
+    from{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(720deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+.father{
+    width: 900px;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yuan{
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+    border-style:solid;
+    border-width: 2px;
+    border-color: aqua;
+}
+
+
+
+.yuan:hover{
+    animation-name: a;
+    animation-duration: 0.5s;
+    
+    background-color: aqua;
+
+} 
+
+
+
+
+@keyframes a{
+    from{background:radial-gradient(rgba(0,0,0),rgba(0,255,255));}
+    10%{background:radial-gradient(rgba(0,25,25),rgba(0,255,255));}
+    20%{background:radial-gradient(rgba(0,50,50),rgba(0,255,255));}
+    30%{background:radial-gradient(rgba(0,75,75),rgba(0,255,255));}
+    40%{background:radial-gradient(rgba(0,100,100),rgba(0,255,255));}
+    50%{background:radial-gradient(rgba(0,125,125),rgba(0,255,255));}
+    60%{background:radial-gradient(rgba(0,150,150),rgba(0,255,255));}
+    70%{background:radial-gradient(rgba(0,175,175),rgba(0,255,255));}
+    80%{background:radial-gradient(rgba(0,200,200),rgba(0,255,255));}
+    90%{background:radial-gradient(rgba(0,225,225),rgba(0,255,255));}
+    to{background:radial-gradient(rgba(0,255,255),rgba(0,255,255)); }
+}
+
+.yuan:hover .yl{
+
+    
+   width: 99px;
+   height: 99px;
+   padding: 0px;
+   margin: 0px;
+   border-radius: 50%;
+   border-style:solid;
+   border-width: 2px;
+   border-color: aqua; 
+   
+}
+
+
+.lj{
+    width: 50px;
+    height: 50px;
+   
+    position:absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+    color: white;
+    
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.yl{
+    margin: auto;
+}
+
+.yuan:active .yl{
+    animation-name: ya;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ya{
+
+
+    from{transform: scale(1,1);opacity: 1;}
+    to {transform: scale(2,2);opacity: 0;}
+}
+
+
